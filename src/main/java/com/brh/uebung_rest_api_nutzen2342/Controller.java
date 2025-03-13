@@ -9,6 +9,11 @@ public class Controller {
 
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+
+        APIRequest apiRequest = new APIRequest();
+        apiRequest.sendRequest("", "Hossein");
+
+
+
     }
 }
