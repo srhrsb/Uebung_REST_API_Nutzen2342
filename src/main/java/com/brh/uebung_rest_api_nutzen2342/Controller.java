@@ -1,5 +1,7 @@
 package com.brh.uebung_rest_api_nutzen2342;
 
+
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
@@ -9,6 +11,8 @@ public class Controller {
 
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+        APIRequest apiRequest = new APIRequest();
+        apiRequest.sendRequest("M", "G");
+
     }
 }
