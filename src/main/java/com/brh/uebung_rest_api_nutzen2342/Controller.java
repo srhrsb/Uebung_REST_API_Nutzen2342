@@ -13,5 +13,6 @@ public class Controller {
     protected void onHelloButtonClick() {
         APIRequest apiRequest = new APIRequest();
         apiRequest.sendRequest("M", "G");
+
     }
 }
